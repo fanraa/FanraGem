@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FanraGem</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/2076/2076970.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="icon.png" />
+    <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#2563eb" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/192/2076/2076970.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -121,7 +121,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('service-worker.js')
           .then(registration => {
             console.log('SW registered: ', registration);
           })
